@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';;
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductoFilterPipe } from './product/producto-filter.pipe';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
@@ -10,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Suma2Component } from './fomrularios/suma2/suma2.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { MaterialModule } from './material/material/material.module';
+import { RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -24,8 +27,10 @@ import { MaterialModule } from './material/material/material.module';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
